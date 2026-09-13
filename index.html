@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECAS Lab</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS for Carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        mustard: {
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #047857 !important;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 50%;
+            width: 40px !important;
+            height: 40px !important;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 1.2rem !important;
+            font-weight: bold;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #047857 !important;
+        }
+        .swiper-container-wrapper {
+            padding-bottom: 3rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <i class="fa-solid fa-microchip text-emerald-700 text-3xl"></i>
+                        <span class="font-bold text-2xl text-emerald-900 tracking-tight">ECAS Lab</span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="#introduccion" class="text-gray-600 hover:text-emerald-700 font-medium transition lang-element" data-en="Introduction" data-es="Introducción">Introduction</a>
+                    <a href="#proyectos" class="text-gray-600 hover:text-emerald-700 font-medium transition lang-element" data-en="Projects" data-es="Proyectos">Projects</a>
+                    <a href="#publicaciones" class="text-gray-600 hover:text-emerald-700 font-medium transition lang-element" data-en="Publications" data-es="Publicaciones">Publications</a>
+                    <a href="#equipo" class="text-gray-600 hover:text-emerald-700 font-medium transition lang-element" data-en="Team" data-es="Equipo">Team</a>
+                    <a href="#contacto" class="bg-emerald-700 text-white px-5 py-2 rounded-md hover:bg-emerald-800 transition shadow-sm lang-element" data-en="Contact" data-es="Contacto">Contact</a>
+                    
+                    <button id="lang-toggle" onclick="toggleLanguage()" class="ml-4 border-2 border-emerald-700 text-emerald-700 px-3 py-1 rounded-full text-sm font-bold hover:bg-emerald-50 transition flex items-center gap-2">
+                        <i class="fa-solid fa-globe"></i> <span id="lang-btn-text">ES</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-28 pb-16 md:pt-36 md:pb-24 bg-emerald-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-section is-visible">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                ECAS Lab
+            </h1>
+            <p class="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto mb-10 lang-element" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore." data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#proyectos" class="bg-mustard-500 text-emerald-900 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-mustard-400 transition lang-element" data-en="View Projects" data-es="Ver Proyectos">
+                    View Projects
+                </a>
+                <a href="#introduccion" class="border border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-emerald-900 transition lang-element" data-en="About Us" data-es="Conócenos">
+                    About Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introducción -->
+    <section id="introduccion" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center fade-in-section">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-emerald-500 pb-2 inline-block lang-element" data-en="Subtitle 1" data-es="Subtítulo 1">
+                        Subtitle 1
+                    </h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed lang-element" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed lang-element" data-en="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident." data-es="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                    </p>
+                    <div class="flex items-center gap-4 text-emerald-800 font-semibold bg-emerald-50 p-4 rounded-lg">
+                        <i class="fa-solid fa-location-dot text-2xl"></i>
+                        <span class="lang-element" data-en="Location: Costa Rica Institute of Technology (TEC)." data-es="Ubicación: Instituto Tecnológico de Costa Rica (TEC).">
+                            Location: Costa Rica Institute of Technology (TEC).
+                        </span>
+                    </div>
+                </div>
+                <div class="relative h-80 rounded-xl overflow-hidden shadow-xl border-4 border-emerald-50">
+                    <img src="https://placehold.co/800x600/047857/ffffff?text=Imagen+1" alt="Imagen 1" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-20 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-12 fade-in-section">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 lang-element" data-en="Projects" data-es="Proyectos">
+                    Projects
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto lang-element" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            
+            <div class="swiper-container-wrapper fade-in-section relative px-2">
+                <div class="swiper projects-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Proyecto 1 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white h-full rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                                <div class="h-48 bg-gray-200 flex-shrink-0">
+                                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Proyecto+1" alt="Proyecto 1" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl mb-2 text-gray-900 lang-element" data-en="Project 1" data-es="Proyecto 1">Project 1</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow lang-element" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum." data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                                    <a href="#" class="inline-flex items-center text-emerald-700 hover:text-emerald-500 font-bold mt-auto lang-element" data-en="View Repository" data-es="Ver Repositorio">
+                                        <i class="fa-brands fa-github mr-2"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Proyecto 2 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white h-full rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                                <div class="h-48 bg-gray-200 flex-shrink-0">
+                                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Proyecto+2" alt="Proyecto 2" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl mb-2 text-gray-900 lang-element" data-en="Project 2" data-es="Proyecto 2">Project 2</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow lang-element" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis euismod enim, id ullamcorper mi." data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis euismod enim, id ullamcorper mi.">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis euismod enim, id ullamcorper mi.</p>
+                                    <a href="#" class="inline-flex items-center text-emerald-700 hover:text-emerald-500 font-bold mt-auto lang-element" data-en="View Repository" data-es="Ver Repositorio">
+                                        <i class="fa-brands fa-github mr-2"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Proyecto 3 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white h-full rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                                <div class="h-48 bg-gray-200 flex-shrink-0">
+                                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Proyecto+3" alt="Proyecto 3" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl mb-2 text-gray-900 lang-element" data-en="Project 3" data-es="Proyecto 3">Project 3</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow lang-element" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus et justo." data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus et justo.">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus et justo.</p>
+                                    <a href="#" class="inline-flex items-center text-emerald-700 hover:text-emerald-500 font-bold mt-auto lang-element" data-en="View Repository" data-es="Ver Repositorio">
+                                        <i class="fa-brands fa-github mr-2"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Proyecto 4 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white h-full rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                                <div class="h-48 bg-gray-200 flex-shrink-0">
+                                    <img src="https://placehold.co/600x400/e2e8f0/475569?text=Proyecto+4" alt="Proyecto 4" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl mb-2 text-gray-900 lang-element" data-en="Project 4" data-es="Proyecto 4">Project 4</h3>
+                                    <p class="text-gray-600 text-sm mb-4 flex-grow lang-element" data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor ut eros euismod aliquet." data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor ut eros euismod aliquet.">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel tortor ut eros euismod aliquet.</p>
+                                    <a href="#" class="inline-flex items-center text-emerald-700 hover:text-emerald-500 font-bold mt-auto lang-element" data-en="View Repository" data-es="Ver Repositorio">
+                                        <i class="fa-brands fa-github mr-2"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination !bottom-0"></div>
+                </div>
+                <div class="swiper-button-prev !left-0"></div>
+                <div class="swiper-button-next !right-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publicaciones -->
+    <section id="publicaciones" class="py-20 bg-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-12 fade-in-section">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 lang-element" data-en="Publications" data-es="Publicaciones">
+                    Publications
+                </h2>
+            </div>
+            
+            <div class="swiper-container-wrapper fade-in-section relative px-2">
+                <div class="swiper pubs-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Publicacion 1 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="border border-gray-200 rounded-lg p-6 hover:border-emerald-500 transition-colors h-full flex flex-col bg-gray-50">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 lang-element" data-en="Publication 1" data-es="Publicación 1">Publication 1</h3>
+                                <p class="text-sm text-gray-500 mb-3"><i class="fa-solid fa-users mr-2"></i>Autor 1, Autor 2, Autor 3</p>
+                                <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="Abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa." data-es="Abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa.">
+                                    <strong>Abstract:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum massa.
+                                </p>
+                                <a href="#" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-emerald-800 hover:text-emerald-900 bg-emerald-100 hover:bg-emerald-200 px-4 py-2 rounded transition">
+                                    <i class="fa-solid fa-file-pdf mr-2"></i> <span class="lang-element" data-en="Link 1" data-es="Enlace 1">Link 1</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Publicacion 2 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="border border-gray-200 rounded-lg p-6 hover:border-emerald-500 transition-colors h-full flex flex-col bg-gray-50">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 lang-element" data-en="Publication 2" data-es="Publicación 2">Publication 2</h3>
+                                <p class="text-sm text-gray-500 mb-3"><i class="fa-solid fa-users mr-2"></i>Autor 1, Autor 2, Autor 3</p>
+                                <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="Abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem." data-es="Abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
+                                    <strong>Abstract:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                                </p>
+                                <a href="#" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-emerald-800 hover:text-emerald-900 bg-emerald-100 hover:bg-emerald-200 px-4 py-2 rounded transition">
+                                    <i class="fa-solid fa-file-pdf mr-2"></i> <span class="lang-element" data-en="Link 2" data-es="Enlace 2">Link 2</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination !bottom-0"></div>
+                </div>
+                <div class="swiper-button-prev pubs-prev !left-0"></div>
+                <div class="swiper-button-next pubs-next !right-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="py-20 bg-emerald-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16 fade-in-section lang-element" data-en="Team" data-es="Equipo">
+                Team
+            </h2>
+            
+            <div class="swiper-container-wrapper fade-in-section relative px-2">
+                <div class="swiper team-swiper">
+                    <div class="swiper-wrapper pb-4">
+                        <!-- Persona 1 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-xl shadow-sm p-6 text-center hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col">
+                                <img src="https://placehold.co/200x200/10b981/ffffff?text=P1" alt="Persona 1" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-mustard-500">
+                                <h3 class="text-lg font-bold text-gray-900 lang-element" data-en="Person 1" data-es="Persona 1">Person 1</h3>
+                                <p class="text-sm text-mustard-600 font-bold mb-2 lang-element" data-en="Role 1" data-es="Cargo 1">Role 1</p>
+                                <p class="text-xs text-gray-500 mb-4 lang-element" data-en="Major 1" data-es="Carrera 1">Major 1</p>
+                                <p class="text-sm text-gray-600 mb-4 flex-grow lang-element" data-en="Descripción 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-es="Descripción 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.">Descripción 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="text-gray-400 hover:text-emerald-700 transition mt-auto"><i class="fa-brands fa-github text-2xl"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Persona 2 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-xl shadow-sm p-6 text-center hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col">
+                                <img src="https://placehold.co/200x200/047857/ffffff?text=P2" alt="Persona 2" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-100">
+                                <h3 class="text-lg font-bold text-gray-900 lang-element" data-en="Person 2" data-es="Persona 2">Person 2</h3>
+                                <p class="text-sm text-emerald-700 font-bold mb-2 lang-element" data-en="Role 2" data-es="Cargo 2">Role 2</p>
+                                <p class="text-xs text-gray-500 mb-4 lang-element" data-en="Major 2" data-es="Carrera 2">Major 2</p>
+                                <p class="text-sm text-gray-600 mb-4 flex-grow lang-element" data-en="Descripción 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-es="Descripción 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.">Descripción 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="text-gray-400 hover:text-emerald-700 transition mt-auto"><i class="fa-solid fa-file-lines text-2xl"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Persona 3 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-xl shadow-sm p-6 text-center hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col">
+                                <img src="https://placehold.co/200x200/64748b/ffffff?text=P3" alt="Persona 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-100">
+                                <h3 class="text-lg font-bold text-gray-900 lang-element" data-en="Person 3" data-es="Persona 3">Person 3</h3>
+                                <p class="text-sm text-emerald-700 font-bold mb-2 lang-element" data-en="Role 3" data-es="Cargo 3">Role 3</p>
+                                <p class="text-xs text-gray-500 mb-4 lang-element" data-en="Major 3" data-es="Carrera 3">Major 3</p>
+                                <p class="text-sm text-gray-600 mb-4 flex-grow lang-element" data-en="Descripción 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-es="Descripción 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.">Descripción 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="text-gray-400 hover:text-emerald-700 transition mt-auto"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Persona 4 -->
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-xl shadow-sm p-6 text-center hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col">
+                                <img src="https://placehold.co/200x200/64748b/ffffff?text=P4" alt="Persona 4" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-100">
+                                <h3 class="text-lg font-bold text-gray-900 lang-element" data-en="Person 4" data-es="Persona 4">Person 4</h3>
+                                <p class="text-sm text-emerald-700 font-bold mb-2 lang-element" data-en="Role 4" data-es="Cargo 4">Role 4</p>
+                                <p class="text-xs text-gray-500 mb-4 lang-element" data-en="Major 4" data-es="Carrera 4">Major 4</p>
+                                <p class="text-sm text-gray-600 mb-4 flex-grow lang-element" data-en="Descripción 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-es="Descripción 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.">Descripción 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="#" class="text-gray-400 hover:text-emerald-700 transition mt-auto"><i class="fa-solid fa-link text-2xl"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination !bottom-0"></div>
+                </div>
+                <div class="swiper-button-prev team-prev !left-0"></div>
+                <div class="swiper-button-next team-next !right-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="bg-emerald-900 p-6 text-center text-white">
+                    <h2 class="text-2xl font-bold lang-element" data-en="Contact Us" data-es="Contáctanos">Contact Us</h2>
+                    <p class="text-emerald-100 mt-2 text-sm lang-element" data-en="Lorem ipsum dolor sit amet." data-es="Lorem ipsum dolor sit amet.">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="p-8">
+                    <!-- FORMSPREE INTEGRATION: Replace 'your_endpoint_here' with the URL provided by Formspree -->
+                    <form action="https://formspree.io/f/your_endpoint_here" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-bold text-gray-700 mb-1 lang-element" data-en="Full Name" data-es="Nombre Completo">Full Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition" placeholder="Nombre Apellido">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-gray-700 mb-1 lang-element" data-en="Email Address" data-es="Correo Electrónico">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-bold text-gray-700 mb-1 lang-element" data-en="Subject" data-es="Asunto">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition" placeholder="Lorem Ipsum">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-bold text-gray-700 mb-1 lang-element" data-en="Message" data-es="Mensaje">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none resize-none transition" placeholder="Lorem ipsum dolor sit amet..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-mustard-500 text-emerald-900 font-bold py-3 px-4 rounded-md hover:bg-mustard-400 transition shadow-md lang-element" data-en="Send Message" data-es="Enviar Mensaje">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-white py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-xl font-bold mb-4 flex items-center gap-2 text-mustard-400">
+                    <i class="fa-solid fa-microchip"></i> ECAS Lab
+                </h4>
+                <p class="text-emerald-100 text-sm lang-element" data-en="Costa Rica Institute of Technology (TEC).<br>Cartago, Costa Rica.<br>Lorem ipsum dolor sit amet." data-es="Instituto Tecnológico de Costa Rica (TEC).<br>Cartago, Costa Rica.<br>Lorem ipsum dolor sit amet.">
+                    Costa Rica Institute of Technology (TEC).<br>
+                    Cartago, Costa Rica.<br>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-mustard-400 lang-element" data-en="Links" data-es="Enlaces">Links</h4>
+                <ul class="space-y-2 text-sm text-emerald-100">
+                    <li><a href="#" class="hover:text-white transition lang-element" data-en="Home" data-es="Inicio">Home</a></li>
+                    <li><a href="#proyectos" class="hover:text-white transition lang-element" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                    <li><a href="#equipo" class="hover:text-white transition lang-element" data-en="Team" data-es="Equipo">Team</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-mustard-400 lang-element" data-en="Socials" data-es="Redes">Socials</h4>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/ECASLab" target="_blank" rel="noopener noreferrer" class="text-emerald-100 hover:text-white transition text-2xl" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-emerald-100 hover:text-white transition text-2xl" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-emerald-900 mt-8 pt-8 text-center text-emerald-200/50 text-sm">
+            &copy; 2026 ECAS Lab. <span class="lang-element" data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Scripts for Logic and Animations -->
+    <script>
+        // Language Toggle Logic
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            
+            document.getElementById('lang-btn-text').innerText = currentLang === 'en' ? 'ES' : 'EN';
+
+            const elements = document.querySelectorAll('.lang-element');
+            
+            elements.forEach(el => {
+                const translation = el.getAttribute(`data-${currentLang}`);
+                if(translation.includes('<')) {
+                    el.innerHTML = translation;
+                } else {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = translation;
+                    } else {
+                        el.innerText = translation;
+                    }
+                }
+            });
+        }
+
+        // DOM Content Loaded Initializer
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. Intersection Observer for scroll animations
+            const fadeElements = document.querySelectorAll('.fade-in-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            fadeElements.forEach(element => observer.observe(element));
+
+            // 2. Swiper Initializations
+            const commonSwiperConfig = {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: { slidesPerView: 1, spaceBetween: 20 },
+                    768: { slidesPerView: 2, spaceBetween: 30 },
+                    1024: { slidesPerView: 3, spaceBetween: 40 },
+                }
+            };
+
+            // Projects Swiper
+            new Swiper('.projects-swiper', {
+                ...commonSwiperConfig,
+                pagination: { el: '.projects-swiper .swiper-pagination', clickable: true },
+                navigation: { nextEl: '.swiper-container-wrapper .swiper-button-next', prevEl: '.swiper-container-wrapper .swiper-button-prev' },
+            });
+
+            // Publications Swiper
+            new Swiper('.pubs-swiper', {
+                ...commonSwiperConfig,
+                pagination: { el: '.pubs-swiper .swiper-pagination', clickable: true },
+                navigation: { nextEl: '.pubs-next', prevEl: '.pubs-prev' },
+                breakpoints: {
+                    768: { slidesPerView: 2, spaceBetween: 30 } 
+                }
+            });
+
+            // Team Swiper
+            new Swiper('.team-swiper', {
+                ...commonSwiperConfig,
+                pagination: { el: '.team-swiper .swiper-pagination', clickable: true },
+                navigation: { nextEl: '.team-next', prevEl: '.team-prev' },
+                breakpoints: {
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    768: { slidesPerView: 3, spaceBetween: 30 },
+                    1024: { slidesPerView: 4, spaceBetween: 30 },
+                }
+            });
+        });
+    </script>
+</body>
+</html>
