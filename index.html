@@ -4,73 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECAS Lab</title>
-    <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        tecblue: {
-                            50: '#eef2f6',
-                            100: '#e0eaf5',
-                            200: '#c2d6ec',
-                            500: '#005DAA', /* Azul TEC principal */
-                            700: '#004070',
-                            800: '#002D56', /* Azul TEC oscuro */
-                            900: '#00182c',
-                        },
-                        accent: {
-                            400: '#4db8ff',
-                            500: '#0085CA', /* Azul claro / acento */
-                            600: '#006ba6',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-            will-change: opacity, transform;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: none;
-        }
-
-        /* Carrusel del equipo: 1 / 2 / 3 / 4 tarjetas visibles según el ancho */
-        .team-track {
-            scrollbar-width: none;
-        }
-        .team-track::-webkit-scrollbar {
-            display: none;
-        }
-        .team-track > div {
-            flex: 0 0 100%;
-            scroll-snap-align: start;
-        }
-        @media (min-width: 640px) {
-            .team-track > div { flex-basis: calc((100% - 2rem) / 2); }
-        }
-        @media (min-width: 768px) {
-            .team-track > div { flex-basis: calc((100% - 4rem) / 3); }
-        }
-        @media (min-width: 1024px) {
-            .team-track > div { flex-basis: calc((100% - 6rem) / 4); }
-        }
-    </style>
+    <!-- Estilos del sitio (generados por Tailwind: npm run build) -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans text-gray-800 bg-gray-50 flex flex-col min-h-screen">
 

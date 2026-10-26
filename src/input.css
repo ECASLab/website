@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animación de aparición al hacer scroll (la clase is-visible la agrega el IntersectionObserver) */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Carrusel del equipo: 1 / 2 / 3 / 4 tarjetas visibles según el ancho */
+.team-track {
+    scrollbar-width: none;
+}
+.team-track::-webkit-scrollbar {
+    display: none;
+}
+.team-track > div {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+@media (min-width: 640px) {
+    .team-track > div { flex-basis: calc((100% - 2rem) / 2); }
+}
+@media (min-width: 768px) {
+    .team-track > div { flex-basis: calc((100% - 4rem) / 3); }
+}
+@media (min-width: 1024px) {
+    .team-track > div { flex-basis: calc((100% - 6rem) / 4); }
+}
