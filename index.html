@@ -30,7 +30,7 @@
                     <a href="#publicaciones" class="text-gray-600 hover:text-tecblue-700 font-medium transition lang-element" data-en="Publications" data-es="Publicaciones">Publications</a>
                     <a href="#equipo" class="text-gray-600 hover:text-tecblue-700 font-medium transition lang-element" data-en="Team" data-es="Equipo">Team</a>
                     <a href="#contacto" class="bg-tecblue-800 text-white px-5 py-2 rounded-md hover:bg-tecblue-900 transition shadow-sm lang-element" data-en="Contact" data-es="Contacto">Contact</a>
-                    
+
                     <button type="button" onclick="toggleLanguage()" class="ml-4 border-2 border-tecblue-800 text-tecblue-800 px-3 py-1 rounded-full text-sm font-bold hover:bg-tecblue-50 transition flex items-center gap-2">
                         <i class="fa-solid fa-globe"></i> <span class="lang-btn-text">ES</span>
                     </button>
@@ -119,107 +119,198 @@
                     Explore our research and development initiatives. Each project reflects our commitment to technological innovation, solving complex problems through advanced hardware and software design.
                 </p>
             </div>
-            
+
             <!-- Grid de Proyectos -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in-section">
-                
-                <!-- Proyecto: Interpoladores Reconfigurables de Funciones No Lineales -->
+
+                <!-- Proyecto: Interpoladores reconfigurables de funciones no lineales en HLS -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="HLS-Based Reconfigurable Nonlinear Function Interpolators for Embedded Systems" data-es="Interpoladores Reconfigurables de Funciones No Lineales basados en HLS para Sistemas Embebidos">HLS-Based Reconfigurable Nonlinear Function Interpolators for Embedded Systems</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="This project focuses on the design and synthesis of highly efficient hardware interpolation blocks using High-Level Synthesis (HLS) methodologies. Its goal is to accelerate complex nonlinear functions with high precision and minimal resource consumption in reconfigurable devices." data-es="Este proyecto se enfoca en el diseño y síntesis de bloques de interpolación hardware altamente eficientes utilizando metodologías de Síntesis de Alto Nivel (HLS). Su objetivo es acelerar el cálculo de funciones no lineales complejas con alta precisión y un consumo mínimo de recursos.">This project focuses on the design and synthesis of highly efficient hardware interpolation blocks using High-Level Synthesis (HLS) methodologies. Its goal is to accelerate complex nonlinear functions with high precision and minimal resource consumption in reconfigurable devices.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="HLS-Based Reconfigurable Nonlinear Function Interpolators" data-es="Interpoladores Reconfigurables de Funciones No Lineales basados en HLS">HLS-Based Reconfigurable Nonlinear Function Interpolators</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Piecewise-linear and lookup-table interpolators that accelerate nonlinear functions (exp, GELU, sigmoid, tanh, Swish) for LLM inference on FPGAs. Functions are changed at runtime by loading new breakpoints and coefficients, or by swapping interpolation engines through dynamic partial reconfiguration (DFX)." data-es="Interpoladores lineales por tramos y basados en tablas de búsqueda que aceleran funciones no lineales (exp, GELU, sigmoide, tanh, Swish) para la inferencia de LLMs en FPGAs. La función se cambia en tiempo de ejecución cargando nuevos puntos de quiebre y coeficientes, o intercambiando motores de interpolación mediante reconfiguración parcial dinámica (DFX).">Piecewise-linear and lookup-table interpolators that accelerate nonlinear functions (exp, GELU, sigmoid, tanh, Swish) for LLM inference on FPGAs. Functions are changed at runtime by loading new breakpoints and coefficients, or by swapping interpolation engines through dynamic partial reconfiguration (DFX).</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/partial-reconfigurable-non-linear-interpolator" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>partial-reconfigurable-non-linear-interpolator
+                        </a>
+                        <a href="https://github.com/ECASLab/hls-lut-accelerator" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>hls-lut-accelerator
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto: Desarrollo de softcores RISC-V en HLS -->
+                <!-- Proyecto: Softcores RISC-V en HLS -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Design and Synthesis of Customizable RISC-V Softcore Processors Using HLS" data-es="Diseño y Síntesis de Softcores Procesadores RISC-V Personalizables mediante HLS">Design and Synthesis of Customizable RISC-V Softcore Processors Using HLS</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Consists of the implementation of processing cores (softcores) based on the open RISC-V instruction set, entirely developed through High-Level Synthesis (HLS) flows for custom embedded microcontrollers." data-es="Consiste en la implementación de núcleos de procesamiento (softcores) basados en el conjunto de instrucciones abierto RISC-V, desarrollados íntegramente a través de flujos de Síntesis de Alto Nivel (HLS).">Consists of the implementation of processing cores (softcores) based on the open RISC-V instruction set, entirely developed through High-Level Synthesis (HLS) flows for custom embedded microcontrollers.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Customizable RISC-V Softcore Processors Using HLS" data-es="Softcores RISC-V Personalizables mediante HLS">Customizable RISC-V Softcore Processors Using HLS</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Processing cores based on the open RISC-V instruction set, described entirely through High-Level Synthesis (HLS). Current work profiles cycles per instruction, latency and frequency to redesign dominant pipeline stages, and prepares the cores to host coprocessors for AI workloads." data-es="Núcleos de procesamiento basados en el conjunto de instrucciones abierto RISC-V, descritos íntegramente mediante Síntesis de Alto Nivel (HLS). El trabajo actual perfila ciclos por instrucción, latencia y frecuencia para rediseñar las etapas dominantes del pipeline, y prepara los núcleos para alojar coprocesadores de IA.">Processing cores based on the open RISC-V instruction set, described entirely through High-Level Synthesis (HLS). Current work profiles cycles per instruction, latency and frequency to redesign dominant pipeline stages, and prepares the cores to host coprocessors for AI workloads.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/risc-v-template" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>risc-v-template
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto 3 -->
+                <!-- Proyecto: PyTorch FPGA -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
                     <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="PyTorch FPGA Configurable Interface" data-es="Interfaz Configurable de PyTorch para FPGA">PyTorch FPGA Configurable Interface</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Development of a configurable Python interface enabling the integration of FPGA hardware accelerators with PyTorch AI models, validated with LeNet-5 on MNIST and MobileNetV2 on ImageNet-1K." data-es="Desarrollo de una interfaz en Python que integra aceleradores hardware FPGA con modelos de IA en PyTorch, validada con LeNet-5 en MNIST y MobileNetV2 en ImageNet-1K.">Development of a configurable Python interface enabling the integration of FPGA hardware accelerators with PyTorch AI models, validated with LeNet-5 on MNIST and MobileNetV2 on ImageNet-1K.</p>
-                    <a href="https://github.com/anghernandez/pytorch-fpga-configurable-interface" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="A configurable Python interface that integrates FPGA hardware accelerators with PyTorch models, validated with LeNet-5 on MNIST and MobileNetV2 on ImageNet-1K. Ongoing extensions add differentiable operators with FPGA-accelerated backward passes and a reproducible catalog of IPs and bitstreams." data-es="Interfaz en Python que integra aceleradores hardware en FPGA con modelos de PyTorch, validada con LeNet-5 en MNIST y MobileNetV2 en ImageNet-1K. Las extensiones en curso agregan operadores diferenciables con backward acelerado en FPGA y un catálogo reproducible de IPs y bitstreams.">A configurable Python interface that integrates FPGA hardware accelerators with PyTorch models, validated with LeNet-5 on MNIST and MobileNetV2 on ImageNet-1K. Ongoing extensions add differentiable operators with FPGA-accelerated backward passes and a reproducible catalog of IPs and bitstreams.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/anghernandez/pytorch-fpga-configurable-interface" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>pytorch-fpga-configurable-interface
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto: Desarrollo de unidades tensoriales especializadas -->
+                <!-- Proyecto: Unidades tensoriales -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Specialized Tensor Unit Architectures for Deep Learning Acceleration on FPGAs" data-es="Arquitecturas de Unidades Tensoriales Especializadas para la Aceleración de Deep Learning en FPGAs">Specialized Tensor Unit Architectures for Deep Learning Acceleration on FPGAs</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Explores hardware-software co-design for optimized tensor processing units in FPGAs, focusing on mixed-precision matrix multiplication and sparse computing." data-es="Explora el co-diseño hardware-software para la creación de unidades de procesamiento tensorial optimizadas en FPGAs, enfocándose en multiplicación de matrices de precisión mixta y computación dispersa.">Explores hardware-software co-design for optimized tensor processing units in FPGAs, focusing on mixed-precision matrix multiplication and sparse computing.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Specialized Tensor Units for Deep Learning Acceleration on FPGAs" data-es="Unidades Tensoriales Especializadas para la Aceleración de Deep Learning en FPGAs">Specialized Tensor Units for Deep Learning Acceleration on FPGAs</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Hardware-software co-design of tensor processing units for matrix multiplication on FPGAs: systolic arrays, multi-bank memories that feed parallel lanes, Strassen-based reorganization and block floating-point arithmetic, evaluated by latency, sustained throughput and resource usage." data-es="Co-diseño hardware-software de unidades de procesamiento tensorial para multiplicación de matrices en FPGAs: arreglos sistólicos, memorias multibanco que alimentan lanes paralelos, reorganización basada en Strassen y aritmética de punto flotante por bloques, evaluados por latencia, rendimiento sostenido y uso de recursos.">Hardware-software co-design of tensor processing units for matrix multiplication on FPGAs: systolic arrays, multi-bank memories that feed parallel lanes, Strassen-based reorganization and block floating-point arithmetic, evaluated by latency, sustained throughput and resource usage.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/hls-systolic-array" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>hls-systolic-array
+                        </a>
+                        <a href="https://github.com/ECASLab/hls-block-floating-point" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>hls-block-floating-point
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto: Exploración y Diseño de Arquitectura para LLMs en FPGAs -->
+                <!-- Proyecto: LLMs en FPGAs -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Exploration and Design of an Architecture for Large Language Models (LLMs) Acceleration on FPGAs" data-es="Exploración y Diseño de una Arquitectura para la Aceleración de Modelos de Lenguaje de Gran Escala (LLMs) en FPGAs">Exploration and Design of an Architecture for Large Language Models (LLMs) Acceleration on FPGAs</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Research and development of an efficient and adaptable hardware-software architecture for Large Language Models (LLMs) inference on FPGA devices, targeting edge computing." data-es="Investigación y desarrollo de una arquitectura de hardware y software eficiente y adaptable para la inferencia de Modelos de Lenguaje de Gran Escala (LLMs) en dispositivos FPGA orientados a edge computing.">Research and development of an efficient and adaptable hardware-software architecture for Large Language Models (LLMs) inference on FPGA devices, targeting edge computing.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Architecture Exploration for Large Language Model (LLM) Acceleration on FPGAs" data-es="Exploración de Arquitecturas para la Aceleración de Modelos de Lenguaje de Gran Escala (LLMs) en FPGAs">Architecture Exploration for Large Language Model (LLM) Acceleration on FPGAs</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Research on an efficient and adaptable hardware-software architecture for LLM inference on FPGAs, from edge boards to data-center cards. It combines optimized kernels for attention and matrix operations with an FPGA-enabled port of llama.cpp, targeting energy efficiency and scalability as models evolve." data-es="Investigación de una arquitectura hardware-software eficiente y adaptable para la inferencia de LLMs en FPGAs, desde tarjetas de borde hasta aceleradoras de centro de datos. Combina kernels optimizados para atención y operaciones matriciales con una versión de llama.cpp habilitada para FPGA, buscando eficiencia energética y escalabilidad conforme evolucionan los modelos.">Research on an efficient and adaptable hardware-software architecture for LLM inference on FPGAs, from edge boards to data-center cards. It combines optimized kernels for attention and matrix operations with an FPGA-enabled port of llama.cpp, targeting energy efficiency and scalability as models evolve.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/hls-fpga-accelerators" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>hls-fpga-accelerators
+                        </a>
+                        <a href="https://github.com/ECASLab/hls-llm-attention" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>hls-llm-attention
+                        </a>
+                        <a href="https://github.com/ECASLab/llama.cpp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>llama.cpp
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto: Aceleración de Algoritmos SLAM en FPGA -->
+                <!-- Proyecto: SLAM -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="SLAM Algorithms Acceleration via Configurable FPGA Unit Design for Edge Mechatronic Systems" data-es="Aceleración de Algoritmos SLAM mediante el Diseño de una Unidad Configurable en FPGA para Sistemas Mecatrónicos de Borde">SLAM Algorithms Acceleration via Configurable FPGA Unit Design for Edge Mechatronic Systems</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="This project investigates and develops a hardware/software co-design solution to accelerate computationally critical stages of Simultaneous Localization and Mapping (SLAM) algorithms on low-cost FPGA systems using High-Level Synthesis (HLS) and fixed-point arithmetic optimization." data-es="Este proyecto investiga y desarrolla una solución de co-diseño hardware/software para acelerar etapas computacionalmente críticas de los algoritmos de Localización y Mapeo Simultáneo (SLAM) en sistemas FPGA de bajo costo utilizando Síntesis de Alto Nivel (HLS).">This project investigates and develops a hardware/software co-design solution to accelerate computationally critical stages of Simultaneous Localization and Mapping (SLAM) algorithms on low-cost FPGA systems using High-Level Synthesis (HLS) and fixed-point arithmetic optimization.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="SLAM Acceleration on Low-Cost FPGAs for Edge Mechatronic Systems" data-es="Aceleración de SLAM en FPGAs de Bajo Costo para Sistemas Mecatrónicos de Borde">SLAM Acceleration on Low-Cost FPGAs for Edge Mechatronic Systems</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Hardware/software co-design that moves the computationally critical stage of a SLAM pipeline (such as the EKF update or sensor fusion between an IMU and odometry or LiDAR) to programmable logic using HLS and fixed-point arithmetic, while the ARM processor keeps the rest of the flow. Evaluated against a CPU-only baseline on standard datasets." data-es="Co-diseño hardware/software que traslada a la lógica programable la etapa computacionalmente crítica de un flujo SLAM (como la actualización del EKF o la fusión de sensores entre una IMU y odometría o LiDAR) usando HLS y aritmética de punto fijo, mientras el procesador ARM mantiene el resto del flujo. Se evalúa frente a una línea base en CPU sobre conjuntos de datos estándar.">Hardware/software co-design that moves the computationally critical stage of a SLAM pipeline (such as the EKF update or sensor fusion between an IMU and odometry or LiDAR) to programmable logic using HLS and fixed-point arithmetic, while the ARM processor keeps the rest of the flow. Evaluated against a CPU-only baseline on standard datasets.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/ekf-slam" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>ekf-slam
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto: Unidad de Punto Flotante Transprecisa de Alta Eficiencia -->
+                <!-- Proyecto: FPU transprecisión -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="High-Efficiency Transprecision Floating-Point Unit for Machine Learning Training and Inference Acceleration" data-es="Unidad de Punto Flotante Transprecisa de Alta Eficiencia para la Aceleración de Entrenamiento e Inferencia en Machine Learning">High-Efficiency Transprecision Floating-Point Unit for Machine Learning Training and Inference Acceleration</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="This project proposes the design and co-design of a Floating-Point Unit (FPU) with dynamic configuration and fine granularity over operand lengths. Integrating SIMD vector capabilities, it optimizes AI workloads and serves as an advanced design space exploration platform in RISC-V architectures." data-es="Este proyecto propone el diseño y co-diseño de una Unidad de Punto Flotante (FPU) con capacidad de configuración dinámica y granularidad fina sobre la longitud de los operandos. Integra capacidades vectoriales SIMD para optimizar cargas de trabajo de inteligencia artificial en arquitecturas RISC-V.">This project proposes the design and co-design of a Floating-Point Unit (FPU) with dynamic configuration and fine granularity over operand lengths. Integrating SIMD vector capabilities, it optimizes AI workloads and serves as an advanced design space exploration platform in RISC-V architectures.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Transprecision Floating-Point Unit for Machine Learning Training and Inference" data-es="Unidad de Punto Flotante Transprecisa para Entrenamiento e Inferencia en Machine Learning">Transprecision Floating-Point Unit for Machine Learning Training and Inference</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Design and implementation of an FPU whose mantissa and exponent widths can be configured at runtime at sub-byte granularity, combined with SIMD sub-word parallelism and low-power techniques. Synthesized for ASIC with OpenLane and benchmarked alongside a RISC-V core against fixed-precision and state-of-the-art transprecision FPUs." data-es="Diseño e implementación de una FPU cuyos anchos de mantisa y exponente se configuran en tiempo de ejecución con granularidad menor a un byte, combinada con paralelismo SIMD por subpalabras y técnicas de bajo consumo. Se sintetiza para ASIC con OpenLane y se evalúa junto a un núcleo RISC-V frente a FPUs de precisión fija y transprecisas del estado del arte.">Design and implementation of an FPU whose mantissa and exponent widths can be configured at runtime at sub-byte granularity, combined with SIMD sub-word parallelism and low-power techniques. Synthesized for ASIC with OpenLane and benchmarked alongside a RISC-V core against fixed-precision and state-of-the-art transprecision FPUs.</p>
                 </div>
 
-                <!-- Proyecto: Desarrollo de Unidades de Interpolación Reconfigurables Basadas en TLUT y Horner -->
+                <!-- Proyecto: TLUT y Horner -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Development of Reconfigurable Interpolation Units Based on TLUT and Horner Scheme" data-es="Desarrollo de Unidades de Interpolación Reconfigurables Basadas en TLUT y Horner">Development of Reconfigurable Interpolation Units Based on TLUT and Horner Scheme</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Focuses on the design and implementation of arithmetic blocks optimized using truncated lookup tables (TLUT) and Horner's polynomial evaluation scheme to accelerate nonlinear functions and mathematical approximations with reduced hardware resource consumption." data-es="Se centra en el diseño e implementación de bloques aritméticos optimizados mediante tablas de búsqueda truncadas (TLUT) y el esquema de Horner para acelerar funciones no lineales y aproximaciones matemáticas con menor consumo de recursos de hardware.">Focuses on the design and implementation of arithmetic blocks optimized using truncated lookup tables (TLUT) and Horner's polynomial evaluation scheme to accelerate nonlinear functions and mathematical approximations with reduced hardware resource consumption.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Reconfigurable Interpolation Units Based on t-LUT and Horner&#x27;s Scheme" data-es="Unidades de Interpolación Reconfigurables Basadas en t-LUT y Horner">Reconfigurable Interpolation Units Based on t-LUT and Horner&#x27;s Scheme</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Arithmetic blocks that approximate nonlinear functions using twofold lookup tables (t-LUT) with runtime-configurable memories and polynomial evaluators based on Horner&#x27;s rule, comparing sequential and pipelined variants by error, resources and throughput." data-es="Bloques aritméticos que aproximan funciones no lineales usando tablas de búsqueda dobles (t-LUT) con memorias configurables en tiempo de ejecución y evaluadores polinomiales basados en la regla de Horner, comparando variantes secuenciales y segmentadas por error, recursos y rendimiento.">Arithmetic blocks that approximate nonlinear functions using twofold lookup tables (t-LUT) with runtime-configurable memories and polynomial evaluators based on Horner&#x27;s rule, comparing sequential and pipelined variants by error, resources and throughput.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/hls-tlut" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>hls-tlut
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto: Integración de Unidades Especiales Dentro de Arquitecturas RISC-V -->
+                <!-- Proyecto: Integración RISC-V -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Integration of Special Units Within RISC-V Architectures" data-es="Integración de Unidades Especiales Dentro de Arquitecturas RISC-V">Integration of Special Units Within RISC-V Architectures</h3>
-                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Consists of the RTL-level incorporation and validation of coprocessors and specialized functional units (such as transprecision FPUs and tensor units) within an open-source RISC-V processor core, evaluating custom instruction decoding and overall performance impact." data-es="Consiste en la incorporación y validación a nivel de RTL de coprocesadores y unidades funcionales especializadas dentro de un núcleo RISC-V de código abierto, evaluando la decodificación de instrucciones personalizadas y el impacto en el rendimiento global.">Consists of the RTL-level incorporation and validation of coprocessors and specialized functional units (such as transprecision FPUs and tensor units) within an open-source RISC-V processor core, evaluating custom instruction decoding and overall performance impact.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Integration of Specialized Units Within RISC-V Architectures" data-es="Integración de Unidades Especializadas Dentro de Arquitecturas RISC-V">Integration of Specialized Units Within RISC-V Architectures</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="End-to-end integration of AI operators (Horner evaluators, dot products, transprecision FPUs, nonlinear units) with a RISC-V core, either as memory-mapped peripherals or custom instructions, including the C access library and an evaluation of invocation, transfer and synchronization overheads." data-es="Integración de extremo a extremo de operadores de IA (evaluadores de Horner, productos punto, FPUs transprecisas, unidades no lineales) con un núcleo RISC-V, ya sea como periféricos mapeados en memoria o instrucciones personalizadas, incluyendo la biblioteca de acceso en C y la evaluación de los costos de invocación, transferencia y sincronización.">End-to-end integration of AI operators (Horner evaluators, dot products, transprecision FPUs, nonlinear units) with a RISC-V core, either as memory-mapped peripherals or custom instructions, including the C access library and an evaluation of invocation, transfer and synchronization overheads.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/risc-v-template" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>risc-v-template
+                        </a>
+                        <a href="https://github.com/ECASLab/camta-non-linear-unit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>camta-non-linear-unit
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Proyecto: CAMTA -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
                     <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="RISC-V Architecture with Dynamically Reconfigurable Nonlinear Function Accelerator (CAMTA)" data-es="Arquitectura Basada en RISC-V con un Acelerador Dinámicamente Reconfigurable para Funciones No Lineales (CAMTA)">RISC-V Architecture with Dynamically Reconfigurable Nonlinear Function Accelerator (CAMTA)</h3>
                     <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="This project presents CAMTA (Configurable Multi-Region Activation Unit), a high-performance, low-power hardware architecture for efficient nonlinear function acceleration in AI workloads. Using multi-region polynomial approximation, Horner's rule, and a pipelined datapath, it allows runtime configuration of coefficients, region limits, and symmetry modes (such as GeLU, tanh, sigmoid, Swish/SiLU) without hardware resynthesis, validated on AMD Alveo U55C FPGAs and edge ASIC flows." data-es="Este proyecto presenta CAMTA (Configurable Multi-Region Activation Unit), una arquitectura de hardware para la aceleración de funciones no lineales en IA. Mediante aproximación polinómica multi-región, la regla de Horner y un datapath segmentado, permite la configuración en tiempo de ejecución de coeficientes, límites y modos (como GeLU, tanh, sigmoide, Swish/SiLU) sin resintetizar el hardware, validado en FPGAs AMD Alveo U55C y flujos ASIC de borde.">This project presents CAMTA (Configurable Multi-Region Activation Unit), a high-performance, low-power hardware architecture for efficient nonlinear function acceleration in AI workloads. Using multi-region polynomial approximation, Horner's rule, and a pipelined datapath, it allows runtime configuration of coefficients, region limits, and symmetry modes (such as GeLU, tanh, sigmoid, Swish/SiLU) without hardware resynthesis, validated on AMD Alveo U55C FPGAs and edge ASIC flows.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/camta-non-linear-unit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>camta-non-linear-unit
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Proyecto: Sistema de Medición de Consumo de Potencia de Arquitectura RISC-V en FPGA -->
+                <!-- Proyecto: Potencia RISC-V -->
                 <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
                     <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="RISC-V Architecture Power Consumption Measurement System on FPGA" data-es="Sistema de Medición de Consumo de Potencia de Arquitectura RISC-V en FPGA">RISC-V Architecture Power Consumption Measurement System on FPGA</h3>
                     <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Presents the design, integration, and validation of an instruction classifier module inside the CV32E40P RISC-V pipeline (PULPissimo SoC on Nexys A7-100T FPGA). It deterministically counts retired instructions across 13 categories exposed via CSR registers, paired with an INA228 high-precision power measurement bench and validated against BEEBS workloads with an RMSE error under 0.13%." data-es="Presenta el diseño, integración y validación de un módulo clasificador de instrucciones en el pipeline del procesador RISC-V CV32E40P (SoC PULPissimo en FPGA Nexys A7-100T). Cuenta de forma determinista instrucciones retiradas agrupadas en 13 categorías expuestas por registros CSR, junto con un banco de medición INA228 y validado frente a cargas BEEBS con un error RMSE menor al 0,13%.">Presents the design, integration, and validation of an instruction classifier module inside the CV32E40P RISC-V pipeline (PULPissimo SoC on Nexys A7-100T FPGA). It deterministically counts retired instructions across 13 categories exposed via CSR registers, paired with an INA228 high-precision power measurement bench and validated against BEEBS workloads with an RMSE error under 0.13%.</p>
-                    <a href="#" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold mt-auto">
-                        <i class="fa-brands fa-github mr-2 text-lg"></i> <span class="lang-element" data-en="View Repository" data-es="Ver Repositorio">View Repository</span>
-                    </a>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/JeremySSSSS/RISC-V-EfiMon" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>RISC-V-EfiMon
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto: MOSAIC -->
+                <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="MOSAIC: Configurable CGRA for AI Workloads" data-es="MOSAIC: CGRA Configurable para Cargas de IA">MOSAIC: Configurable CGRA for AI Workloads</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="A library of configurable processing cells and a shared RTL methodology for building coarse-grained reconfigurable arrays (CGRA). Research covers cells specialized for multiply-accumulate, scheduling AI kernels onto the mesh, RISC-V integration and reproducible design space exploration." data-es="Biblioteca de celdas de procesamiento configurables y metodología RTL compartida para construir arreglos reconfigurables de grano grueso (CGRA). La investigación abarca celdas especializadas en multiplicación-acumulación, calendarización de kernels de IA sobre la malla, integración con RISC-V y exploración reproducible del espacio de diseño.">A library of configurable processing cells and a shared RTL methodology for building coarse-grained reconfigurable arrays (CGRA). Research covers cells specialized for multiply-accumulate, scheduling AI kernels onto the mesh, RISC-V integration and reproducible design space exploration.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/mosaic-common" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>mosaic-common
+                        </a>
+                        <a href="https://github.com/ECASLab/mosaic-flow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>mosaic-flow
+                        </a>
+                        <a href="https://github.com/ECASLab/risc-v-cgra" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>risc-v-cgra
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto: CYNQ -->
+                <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="CYNQ: C/C++ Runtime for FPGA Acceleration" data-es="CYNQ: Entorno de Ejecución en C/C++ para Aceleración en FPGA">CYNQ: C/C++ Runtime for FPGA Acceleration</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="PYNQ-like bindings for C and C++ that operate the programmable logic of AMD FPGAs without the Python interpreter or the long Vitis flow, lowering overhead and latency when running hardware accelerators on embedded and data-center platforms." data-es="Enlaces tipo PYNQ para C y C++ que operan la lógica programable de FPGAs AMD sin el intérprete de Python ni el extenso flujo de Vitis, reduciendo la sobrecarga y la latencia al ejecutar aceleradores de hardware en plataformas embebidas y de centro de datos.">PYNQ-like bindings for C and C++ that operate the programmable logic of AMD FPGAs without the Python interpreter or the long Vitis flow, lowering overhead and latency when running hardware accelerators on embedded and data-center platforms.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/cynq" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>cynq
+                        </a>
+                        <a href="https://github.com/ECASLab/cynq-docs" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>cynq-docs
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto: FAL -->
+                <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Flexible Accelerators Library (FAL) and Approximate Computing" data-es="Flexible Accelerators Library (FAL) y Computación Aproximada">Flexible Accelerators Library (FAL) and Approximate Computing</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="A templated HLS library of GEMM, convolution and approximate arithmetic operators that lets low-end FPGAs accelerate signal processing and AI workloads, tuning the accuracy-efficiency trade-off through approximate computing and quantization. Includes approximate logic synthesis tools and an executor to evaluate accuracy in real models." data-es="Biblioteca HLS basada en plantillas con operadores GEMM, convolución y aritmética aproximada que permite a FPGAs de gama baja acelerar cargas de procesamiento de señales e IA, ajustando el compromiso entre precisión y eficiencia mediante computación aproximada y cuantización. Incluye herramientas de síntesis lógica aproximada y un ejecutor para evaluar la precisión en modelos reales.">A templated HLS library of GEMM, convolution and approximate arithmetic operators that lets low-end FPGAs accelerate signal processing and AI workloads, tuning the accuracy-efficiency trade-off through approximate computing and quantization. Includes approximate logic synthesis tools and an executor to evaluate accuracy in real models.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://gitlab.com/ecas-lab-tec/approximate-flexible-acceleration-ml" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-gitlab mr-2 text-lg"></i>approximate-flexible-acceleration-ml
+                        </a>
+                        <a href="https://github.com/ECASLab/approximate-matrix-accelerator" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>approximate-matrix-accelerator
+                        </a>
+                        <a href="https://github.com/ECASLab/AxLS" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>AxLS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto: Softmax -->
+                <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-tecblue-500 hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="font-bold text-xl mb-3 text-gray-900 lang-element" data-en="Softmax Acceleration with CORDIC and Approximate Computing" data-es="Aceleración de Softmax con CORDIC y Computación Aproximada">Softmax Acceleration with CORDIC and Approximate Computing</h3>
+                    <p class="text-gray-600 text-sm mb-6 flex-grow lang-element" data-en="Hardware accelerators for the softmax function on FPGAs based on CORDIC, Taylor series and LUT interpolation, quantifying the trade-off between numerical precision, latency and resources in deep learning inference." data-es="Aceleradores de hardware para la función softmax en FPGAs basados en CORDIC, series de Taylor e interpolación con LUTs, cuantificando el compromiso entre precisión numérica, latencia y recursos en la inferencia de deep learning.">Hardware accelerators for the softmax function on FPGAs based on CORDIC, Taylor series and LUT interpolation, quantifying the trade-off between numerical precision, latency and resources in deep learning inference.</p>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <a href="https://github.com/ECASLab/hls-softmax-cordic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-tecblue-700 hover:text-accent-500 font-bold text-sm break-all">
+                            <i class="fa-brands fa-github mr-2 text-lg"></i>hls-softmax-cordic
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -237,335 +328,473 @@
                     Explore our peer-reviewed research papers and academic contributions in embedded systems and sustainable computing.
                 </p>
             </div>
-            
-            <!-- Grid de Publicaciones -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in-section">
-                
-                <!-- Publicacion 1 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Acceleration of fully connected layers on FPGA using the Strassen matrix multiplication</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Alex Chacón-Rodríguez, Eduardo Salazar-Villalobos, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/11/28</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Investigates the use of FPGAs and Strassen matrix multiplication to accelerate fully connected Deep Learning layers in energy-constrained edge environments." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Investiga el uso de FPGAs y la multiplicación de matrices de Strassen para acelerar las capas completamente conectadas de Deep Learning en entornos con restricciones de energía en el Edge.">
-                        <strong>Abstract:</strong> Investigates the use of FPGAs and Strassen matrix multiplication to accelerate fully connected Deep Learning layers in energy-constrained edge environments.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:KlAtU1dfN6UC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
 
-                <!-- Publicacion 2 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">A comprehensive analysis of process energy consumption on Multi-socket systems with GPUs</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Niccolò Tosato, Stefano Cozzini</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/9/30</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes novel mathematical models and tools to robustly estimate non-exclusive process energy consumption in multi-socket HPC systems with GPUs." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone nuevos modelos matemáticos y herramientas para estimar de manera robusta y no exclusiva el consumo energético de procesos en sistemas HPC multi-socket con GPUs.">
-                        <strong>Abstract:</strong> Proposes novel mathematical models and tools to robustly estimate non-exclusive process energy consumption in multi-socket HPC systems with GPUs.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:YOwf2qJgpHMC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
+            <!-- Lista colapsable de Publicaciones -->
+            <div class="max-w-4xl mx-auto fade-in-section">
+                <div class="flex justify-end mb-3">
+                    <button type="button" id="pubs-toggle-all" class="text-sm font-semibold text-tecblue-700 hover:text-accent-500 transition">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center mr-1"></i><span class="lang-element" data-en="Expand all" data-es="Expandir todo">Expand all</span>
+                    </button>
                 </div>
+                <div class="border border-gray-200 rounded-xl divide-y divide-gray-200 bg-white overflow-hidden">
 
-                <!-- Publicacion 3 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">A quantitative evaluation of approximate softmax functions for deep neural networks</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Anthony Leiva-Valverde, Fabricio Elizondo-Fernández, Luis G León-Vega, Cristina Meinhardt, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/2/24</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Evaluates approximate computing techniques (Taylor series and LUT interpolation) to accelerate the softmax function on low-end FPGAs while maintaining numerical precision." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Evalúa técnicas de computación aproximada (series de Taylor e interpolación con LUTs) para acelerar la función softmax en FPGAs de gama baja con alta precisión numérica.">
-                        <strong>Abstract:</strong> Evaluates approximate computing techniques (Taylor series and LUT interpolation) to accelerate the softmax function on low-end FPGAs while maintaining numerical precision.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:4TOpqqG69KYC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">CAMTA: A Reconfigurable Multi-Region Activation Unit for Nonlinear Function Approximation</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Carlos Soto-Porras, Jose Fonseca-Cruz, Pablo Ramirez-Morera, Erick Obregon-Fonseca, Luis G Leon-Vega, Jorge Castro-Godinez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/8/4</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Introduces CAMTA, a 16-bit reconfigurable multi-region activation unit based on Horner's method for nonlinear function approximation in FPGA and ASIC accelerators." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Introduce CAMTA, una unidad de activación multirregión reconfigurable de 16 bits basada en el método de Horner para aproximación de funciones no lineales en aceleradores FPGA y ASIC.">
+                                <strong>Abstract:</strong> Introduces CAMTA, a 16-bit reconfigurable multi-region activation unit based on Horner's method for nonlinear function approximation in FPGA and ASIC accelerators.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:IWHjjKOFINEC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Interpolation of Non-Linear Functions for LLMs using Partial Reconfiguration in FPGAs</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Roger Morales-Monge, Nazareth Jimenez-Chacon, Jose Gabriel Villalobos-Alvarado, Luis G Leon-Vega, Jorge Castro-Godinez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/8/4</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes a partial reconfiguration-based PWL interpolation framework to significantly reduce hardware costs for non-linear functions in LLM workloads." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un marco de interpolación PWL basado en reconfiguración parcial para reducir drásticamente el costo de hardware en funciones no lineales orientadas a cargas de trabajo LLM.">
+                                <strong>Abstract:</strong> Proposes a partial reconfiguration-based PWL interpolation framework to significantly reduce hardware costs for non-linear functions in LLM workloads.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:ZeXyd9-uunAC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Integrated Software and Thermal Imaging Framework to Evaluate Passive PV Cooling Systems in Intelligent Urban Environments</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, Leonardo Cardinale-Villalobos, Christopher Vega-Sánchez, Maickol Fernandez-Obando, Luis Diego Murillo-Soto</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/6</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Presents an integrated IoT and thermal imaging framework to experimentally evaluate passive cooling systems in urban photovoltaic modules." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Presenta un marco integrado de IoT y procesamiento de imágenes térmicas para evaluar de forma experimental sistemas pasivos de enfriamiento en módulos fotovoltaicos urbanos.">
+                                <strong>Abstract:</strong> Presents an integrated IoT and thermal imaging framework to experimentally evaluate passive cooling systems in urban photovoltaic modules.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:L8Ckcad2t8MC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Evaluating CORDIC-Based and Approximate Softmax Accelerators for Deep Learning Inference on FPGAs</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Andrés Carrillo-Arroyo, Anthony Leiva-Valverde, Roger Morales-Monge, Emilio Soto-Porras, Luis G León-Vega, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/5/26</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Provides a unified analysis comparing a CORDIC-based softmax accelerator against Taylor- and LUT-based approximate designs on cloud-scale FPGA platforms." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Proporciona un análisis unificado comparando un acelerador softmax basado en CORDIC con diseños aproximados basados en series de Taylor e interpolación en plataformas FPGA en la nube.">
+                                <strong>Abstract:</strong> Provides a unified analysis comparing a CORDIC-based softmax accelerator against Taylor- and LUT-based approximate designs on cloud-scale FPGA platforms.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:-f6ydRqryjwC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Exploring Approximate Logic Synthesis Opportunities for FPGA-Based Designs</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Moisés Leiva-Solano, Carlos Quirós, Nagel Mejía-Segura, Luis G León-Vega, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/5/26</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Explores approximate logic synthesis on FPGAs by adapting ASIC-oriented frameworks and evaluating post-mapping bit truncation strategies." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Explora la síntesis lógica aproximada en FPGAs adaptando herramientas orientadas a ASIC y evaluando estrategias de truncamiento de bits post-mapeo.">
+                                <strong>Abstract:</strong> Explores approximate logic synthesis on FPGAs by adapting ASIC-oriented frameworks and evaluating post-mapping bit truncation strategies.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:hC7cP41nSMkC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Design and Implementation of a Multi-Sensor DAQ System for Comparative Photovoltaic Performance Analysis</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Maickol Fernandez-Obando, Luis G. Leon-Vega, Leonardo Cardinale-Villalobos, Christopher Vega-Sanchez, Luis D. Murillo-Soto</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/4/8</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Designs and implements a robust Raspberry Pi 4-based data acquisition system for comparative performance analysis of solar panels featuring different cooling systems." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Diseña e implementa un sistema de adquisición de datos robusto basado en Raspberry Pi 4 para el análisis comparativo del rendimiento de paneles solares con distintos sistemas de enfriamiento.">
+                                <strong>Abstract:</strong> Designs and implements a robust Raspberry Pi 4-based data acquisition system for comparative performance analysis of solar panels featuring different cooling systems.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:QIV2ME_5wuYC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">A quantitative evaluation of approximate softmax functions for deep neural networks</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Anthony Leiva-Valverde, Fabricio Elizondo-Fernández, Luis G León-Vega, Cristina Meinhardt, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/2/24</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Evaluates approximate computing techniques (Taylor series and LUT interpolation) to accelerate the softmax function on low-end FPGAs while maintaining numerical precision." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Evalúa técnicas de computación aproximada (series de Taylor e interpolación con LUTs) para acelerar la función softmax en FPGAs de gama baja con alta precisión numérica.">
+                                <strong>Abstract:</strong> Evaluates approximate computing techniques (Taylor series and LUT interpolation) to accelerate the softmax function on low-end FPGAs while maintaining numerical precision.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:4TOpqqG69KYC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Machine Learning-Based Error Estimation for Efficient Approximate Logic Synthesis</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Kendall Rivera-Solano, Luis G León-Vega, Erick Carvajal Barboza, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/2/24</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes a machine learning-based approach to predict errors introduced by gate elimination, reducing costly simulations during approximate logic synthesis." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un enfoque basado en aprendizaje automático para predecir errores introducidos por eliminación de compuertas lógicas, reduciendo costosas simulaciones en síntesis aproximada.">
+                                <strong>Abstract:</strong> Proposes a machine learning-based approach to predict errors introduced by gate elimination, reducing costly simulations during approximate logic synthesis.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:dhFuZR0502QC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Sustainable Computing in the AI Era: Energy Profiling and Reconfigurable High-Performance Computing</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2026</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis Gerardo Leon Vega</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/1/20</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Doctoral dissertation focused on sustainable computing through detailed fine-grained energy profiling in supercomputers (EfiMon) and reconfigurable FPGA-based accelerators." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Disertación doctoral centrada en la computación sostenible mediante la medición detallada del consumo energético en supercomputadoras (EfiMon) y aceleradores FPGA reconfigurables.">
+                                <strong>Abstract:</strong> Doctoral dissertation focused on sustainable computing through detailed fine-grained energy profiling in supercomputers (EfiMon) and reconfigurable FPGA-based accelerators.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:9ZlFYXVOiuMC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">LLM Acceleration on FPGAs: A Comparative Study of Layer and Spatial Accelerators</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2024</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis D Prieto-Sibaja, Luis G León-Vega, Indra León-Vega, Jorge Castro-Godinez, Stefano Cozzini</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/11/27</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Compares resource consumption and latency between two distinct FPGA architectures aimed at efficiently accelerating Large Language Models (LLMs)." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Compara el consumo de recursos y la latencia de dos arquitecturas distintas de FPGAs orientadas a acelerar Modelos de Lenguaje Grande (LLMs) de forma eficiente.">
+                                <strong>Abstract:</strong> Compares resource consumption and latency between two distinct FPGA architectures aimed at efficiently accelerating Large Language Models (LLMs).
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:aqlVkmm33-oC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Configurable high-level synthesis approximate arithmetic units for deep learning accelerators</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2024</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>David Cordero-Chavarria, Luis G León-Vega, Jorge Castro-Godinez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/11/27</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes configurable approximate arithmetic operators described in C++ for HLS, evaluating their impact on classification neural network model accuracy." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone operadores aritméticos aproximados configurables descritos en C++ para HLS, evaluando su impacto en la precisión de modelos de redes neuronales de clasificación.">
+                                <strong>Abstract:</strong> Proposes configurable approximate arithmetic operators described in C++ for HLS, evaluating their impact on classification neural network model accuracy.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:4DMP91E08xMC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Cynq: Speeding up FPGA applications with simplicity</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2024</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Diego Avila-Torres, Indra León-Vega, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/11/18</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Presents CYNQ, a simplified, API-agnostic C/C++ runtime library that outperforms traditional libraries on AMD FPGAs while offering high ease of use." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Presenta CYNQ, una librería de ejecución en C/C++ simplificada y agnóstica de API que supera el rendimiento de las librerías tradicionales en FPGAs de AMD con gran facilidad de uso.">
+                                <strong>Abstract:</strong> Presents CYNQ, a simplified, API-agnostic C/C++ runtime library that outperforms traditional libraries on AMD FPGAs while offering high ease of use.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:M3ejUd6NZC8C" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">A comprehensive analysis of process energy consumption on Multi-socket systems with GPUs</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2024</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Niccolò Tosato, Stefano Cozzini</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/9/30</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes novel mathematical models and tools to robustly estimate non-exclusive process energy consumption in multi-socket HPC systems with GPUs." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone nuevos modelos matemáticos y herramientas para estimar de manera robusta y no exclusiva el consumo energético de procesos en sistemas HPC multi-socket con GPUs.">
+                                <strong>Abstract:</strong> Proposes novel mathematical models and tools to robustly estimate non-exclusive process energy consumption in multi-socket HPC systems with GPUs.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:YOwf2qJgpHMC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Efimon: A process analyser for granular power consumption prediction</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2024</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Niccolò Tosato, Stefano Cozzini</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/9/30</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Introduces EfiMon, an agnostic and non-invasive tool designed to extract detailed process execution data to predict granular power consumption in supercomputers." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Introduce EfiMon, una herramienta agnóstica y no invasiva para extraer información detallada de la ejecución de procesos y predecir el consumo de energía granular en supercomputadoras.">
+                                <strong>Abstract:</strong> Introduces EfiMon, an agnostic and non-invasive tool designed to extract detailed process execution data to predict granular power consumption in supercomputers.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:ULOm3_A8WrAC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">A user-friendly ecosystem for AI FPGA-based accelerators</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2024</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, Erick Obregon-Fonseca, Jorge Castro-Godinez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/7/29</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Introduces a user-friendly ecosystem featuring a library of pre-built accelerators and an agnostic API to facilitate FPGA usage in embedded Artificial Intelligence." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Introduce un ecosistema amigable que incluye una librería de aceleradores preconstruidos y una API agnóstica para facilitar el uso de FPGAs en Inteligencia Artificial embebida.">
+                                <strong>Abstract:</strong> Introduces a user-friendly ecosystem featuring a library of pre-built accelerators and an agnostic API to facilitate FPGA usage in embedded Artificial Intelligence.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:Zph67rFs4hoC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Acceleration of fully connected layers on FPGA using the Strassen matrix multiplication</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2023</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Alex Chacón-Rodríguez, Eduardo Salazar-Villalobos, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/11/28</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Investigates the use of FPGAs and Strassen matrix multiplication to accelerate fully connected Deep Learning layers in energy-constrained edge environments." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Investiga el uso de FPGAs y la multiplicación de matrices de Strassen para acelerar las capas completamente conectadas de Deep Learning en entornos con restricciones de energía en el Edge.">
+                                <strong>Abstract:</strong> Investigates the use of FPGAs and Strassen matrix multiplication to accelerate fully connected Deep Learning layers in energy-constrained edge environments.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:KlAtU1dfN6UC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Automatic generation of resource and accuracy configurable processing elements</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2023</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, Eduardo Salazar-Villalobos, Alejandro Rodriguez-Figueroa, Jorge Castro-Godinez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/7/24</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes a framework to automatically generate synthesis-time configurable processing elements for matrix multiplication and convolution at the edge." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un framework para generar automáticamente elementos de procesamiento configurables en tiempo de síntesis para multiplicación de matrices y convolución en el Edge.">
+                                <strong>Abstract:</strong> Proposes a framework to automatically generate synthesis-time configurable processing elements for matrix multiplication and convolution at the edge.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:YsMSGLbcyi4C" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Generic accuracy configurable matrix multiplication-addition accelerator using HLS</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2023</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/6/27</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Presents a configurable accelerator architecture in C++ for matrix multiplication-addition operations designed to overcome power limitations in edge devices." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Presenta una arquitectura de acelerador configurable en C++ para operaciones de multiplicación-adición de matrices orientada a superar las limitaciones de potencia en dispositivos Edge.">
+                                <strong>Abstract:</strong> Presents a configurable accelerator architecture in C++ for matrix multiplication-addition operations designed to overcome power limitations in edge devices.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:MXK_kJrjxJIC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Flexible Accelerator Library: Approximate Computing Executer (AxC Executer)</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2023</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, David Cordero Chavarria, Jorge Castro-Godinez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/3</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Describes a template-based C++ software suite for Convolutional Neural Network inference, allowing modular replacement of arithmetic units for approximate computing." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Describe un paquete de software en C++ basado en plantillas para realizar inferencia de redes neuronales convolucionales permitiendo el intercambio modular de unidades aritméticas.">
+                                <strong>Abstract:</strong> Describes a template-based C++ software suite for Convolutional Neural Network inference, allowing modular replacement of arithmetic units for approximate computing.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:mVmsd5A6BfQC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Design of a library of generic accelerators of DNN-based inference algorithms for low-end FPGAs</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2022</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis Gerardo León-Vega</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022/12/8</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes an open-source framework with libraries for the automatic generation of vectorized processing elements and generic accelerators for low-end FPGAs." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un framework de código abierto con librerías para la generación automática de elementos de procesamiento vectorizados y aceleradores genéricos para FPGAs de gama baja.">
+                                <strong>Abstract:</strong> Proposes an open-source framework with libraries for the automatic generation of vectorized processing elements and generic accelerators for low-end FPGAs.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:8k81kl-MbHgC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Measuring Traffic Dynamics at the Edge</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2022</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis Gerardo León-Vega, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022/11/1</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Measures the impact of multi-threading and approximate computing (frame skipping) to accelerate a traffic metering system on edge computing devices." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Mide el impacto del multi-threading y la computación aproximada (omisión de fotogramas) para acelerar un sistema de medición de tráfico en dispositivos de borde.">
+                                <strong>Abstract:</strong> Measures the impact of multi-threading and approximate computing (frame skipping) to accelerate a traffic metering system on edge computing devices.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">An Exploration of Accuracy Configurable Matrix Multiply-Addition Architectures using HLS</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2022</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G. León-Vega, Eduardo Salazar-Villalobos, Jorge Castro-Godínez</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Explores the automatic generation of GEMMA processing elements using High-Level Synthesis (HLS), analyzing the impact of precision configuration and matrix size on resource usage." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Estudia la generación automática de elementos de procesamiento GEMMA mediante Síntesis de Alto Nivel (HLS), analizando el impacto de la configuración de precisión y tamaño de matriz.">
+                                <strong>Abstract:</strong> Explores the automatic generation of GEMMA processing elements using High-Level Synthesis (HLS), analyzing the impact of precision configuration and matrix size on resource usage.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Benchmarking the NXP i.MX8M+ neural processing unit: smart parking case study</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2022</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Edgar Chaves González, Luis Gerardo León Vega</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Explores the performance of the NXP i.MX8M Plus NPU through a smart parking case study, demonstrating a drastic reduction in CPU load." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Explora el rendimiento de la NPU del NXP i.MX8M Plus mediante un caso de estudio de estacionamiento inteligente, demostrando una reducción drástica en la carga del CPU.">
+                                <strong>Abstract:</strong> Explores the performance of the NXP i.MX8M Plus NPU through a smart parking case study, demonstrating a drastic reduction in CPU load.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
+                    <details class="pub-item group">
+                        <summary class="flex items-start gap-4 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-tecblue-50 transition">
+                            <span class="flex-1 font-semibold text-gray-900 leading-snug">Accelerating machine learning at the edge with approximate computing on FPGAs</span>
+                            <span class="shrink-0 text-xs font-bold text-tecblue-800 bg-tecblue-100 rounded px-2 py-1">2022</span>
+                            <i class="fa-solid fa-chevron-down shrink-0 mt-1 text-tecblue-700 transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div class="px-5 pb-5 pt-1 bg-gray-50">
+                            <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Eduardo Salazar Villalobos, Jorge Castro Godínez, Luis Gerardo León Vega</p>
+                            <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022</p>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Investigates edge machine learning acceleration by offloading computations to FPGAs and using approximate computing to optimize hardware resource utilization." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Investiga la aceleración de machine learning en el Edge descargando cálculos a FPGAs y utilizando computación aproximada para optimizar el uso de recursos de hardware.">
+                                <strong>Abstract:</strong> Investigates edge machine learning acceleration by offloading computations to FPGAs and using approximate computing to optimize hardware resource utilization.
+                            </p>
+                            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:Tyk-4Ss8FVUC" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
+                                <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
+                            </a>
+
+                        </div>
+                    </details>
+
                 </div>
-
-                <!-- Publicacion 4 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">An Exploration of Accuracy Configurable Matrix Multiply-Addition Architectures using HLS</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G. León-Vega, Eduardo Salazar-Villalobos, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Explores the automatic generation of GEMMA processing elements using High-Level Synthesis (HLS), analyzing the impact of precision configuration and matrix size on resource usage." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Estudia la generación automática de elementos de procesamiento GEMMA mediante Síntesis de Alto Nivel (HLS), analizando el impacto de la configuración de precisión y tamaño de matriz.">
-                        <strong>Abstract:</strong> Explores the automatic generation of GEMMA processing elements using High-Level Synthesis (HLS), analyzing the impact of precision configuration and matrix size on resource usage.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 5 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Automatic generation of resource and accuracy configurable processing elements</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, Eduardo Salazar-Villalobos, Alejandro Rodriguez-Figueroa, Jorge Castro-Godinez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/7/24</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes a framework to automatically generate synthesis-time configurable processing elements for matrix multiplication and convolution at the edge." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un framework para generar automáticamente elementos de procesamiento configurables en tiempo de síntesis para multiplicación de matrices y convolución en el Edge.">
-                        <strong>Abstract:</strong> Proposes a framework to automatically generate synthesis-time configurable processing elements for matrix multiplication and convolution at the edge.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:YsMSGLbcyi4C" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 6 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">A user-friendly ecosystem for AI FPGA-based accelerators</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, Erick Obregon-Fonseca, Jorge Castro-Godinez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/7/29</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Introduces a user-friendly ecosystem featuring a library of pre-built accelerators and an agnostic API to facilitate FPGA usage in embedded Artificial Intelligence." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Introduce un ecosistema amigable que incluye una librería de aceleradores preconstruidos y una API agnóstica para facilitar el uso de FPGAs en Inteligencia Artificial embebida.">
-                        <strong>Abstract:</strong> Introduces a user-friendly ecosystem featuring a library of pre-built accelerators and an agnostic API to facilitate FPGA usage in embedded Artificial Intelligence.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:Zph67rFs4hoC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 7 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Generic accuracy configurable matrix multiplication-addition accelerator using HLS</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/6/27</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Presents a configurable accelerator architecture in C++ for matrix multiplication-addition operations designed to overcome power limitations in edge devices." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Presenta una arquitectura de acelerador configurable en C++ para operaciones de multiplicación-adición de matrices orientada a superar las limitaciones de potencia en dispositivos Edge.">
-                        <strong>Abstract:</strong> Presents a configurable accelerator architecture in C++ for matrix multiplication-addition operations designed to overcome power limitations in edge devices.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:MXK_kJrjxJIC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 8 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">LLM Acceleration on FPGAs: A Comparative Study of Layer and Spatial Accelerators</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis D Prieto-Sibaja, Luis G León-Vega, Indra León-Vega, Jorge Castro-Godinez, Stefano Cozzini</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/11/27</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Compares resource consumption and latency between two distinct FPGA architectures aimed at efficiently accelerating Large Language Models (LLMs)." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Compara el consumo de recursos y la latencia de dos arquitecturas distintas de FPGAs orientadas a acelerar Modelos de Lenguaje Grande (LLMs) de forma eficiente.">
-                        <strong>Abstract:</strong> Compares resource consumption and latency between two distinct FPGA architectures aimed at efficiently accelerating Large Language Models (LLMs).
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:aqlVkmm33-oC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 9 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Cynq: Speeding up FPGA applications with simplicity</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Diego Avila-Torres, Indra León-Vega, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/11/18</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Presents CYNQ, a simplified, API-agnostic C/C++ runtime library that outperforms traditional libraries on AMD FPGAs while offering high ease of use." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Presenta CYNQ, una librería de ejecución en C/C++ simplificada y agnóstica de API que supera el rendimiento de las librerías tradicionales en FPGAs de AMD con gran facilidad de uso.">
-                        <strong>Abstract:</strong> Presents CYNQ, a simplified, API-agnostic C/C++ runtime library that outperforms traditional libraries on AMD FPGAs while offering high ease of use.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:M3ejUd6NZC8C" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 10 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Efimon: A process analyser for granular power consumption prediction</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G León-Vega, Niccolò Tosato, Stefano Cozzini</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/9/30</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Introduces EfiMon, an agnostic and non-invasive tool designed to extract detailed process execution data to predict granular power consumption in supercomputers." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Introduce EfiMon, una herramienta agnóstica y no invasiva para extraer información detallada de la ejecución de procesos y predecir el consumo de energía granular en supercomputadoras.">
-                        <strong>Abstract:</strong> Introduces EfiMon, an agnostic and non-invasive tool designed to extract detailed process execution data to predict granular power consumption in supercomputers.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:ULOm3_A8WrAC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 11 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Flexible Accelerator Library: Approximate Computing Executer (AxC Executer)</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, David Cordero Chavarria, Jorge Castro-Godinez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2023/3</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Describes a template-based C++ software suite for Convolutional Neural Network inference, allowing modular replacement of arithmetic units for approximate computing." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Describe un paquete de software en C++ basado en plantillas para realizar inferencia de redes neuronales convolucionales permitiendo el intercambio modular de unidades aritméticas.">
-                        <strong>Abstract:</strong> Describes a template-based C++ software suite for Convolutional Neural Network inference, allowing modular replacement of arithmetic units for approximate computing.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:mVmsd5A6BfQC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 12 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Measuring Traffic Dynamics at the Edge</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis Gerardo León-Vega, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022/11/1</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Measures the impact of multi-threading and approximate computing (frame skipping) to accelerate a traffic metering system on edge computing devices." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Mide el impacto del multi-threading y la computación aproximada (omisión de fotogramas) para acelerar un sistema de medición de tráfico en dispositivos de borde.">
-                        <strong>Abstract:</strong> Measures the impact of multi-threading and approximate computing (frame skipping) to accelerate a traffic metering system on edge computing devices.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:IjCSPb-OGe4C" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 13 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Benchmarking the NXP i.MX8M+ neural processing unit: smart parking case study</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Edgar Chaves González, Luis Gerardo León Vega</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Explores the performance of the NXP i.MX8M Plus NPU through a smart parking case study, demonstrating a drastic reduction in CPU load." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Explora el rendimiento de la NPU del NXP i.MX8M Plus mediante un caso de estudio de estacionamiento inteligente, demostrando una reducción drástica en la carga del CPU.">
-                        <strong>Abstract:</strong> Explores the performance of the NXP i.MX8M Plus NPU through a smart parking case study, demonstrating a drastic reduction in CPU load.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:Y0pCki6q_DkC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 14 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Configurable high-level synthesis approximate arithmetic units for deep learning accelerators</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>David Cordero-Chavarria, Luis G León-Vega, Jorge Castro-Godinez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2024/11/27</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes configurable approximate arithmetic operators described in C++ for HLS, evaluating their impact on classification neural network model accuracy." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone operadores aritméticos aproximados configurables descritos en C++ para HLS, evaluando su impacto en la precisión de modelos de redes neuronales de clasificación.">
-                        <strong>Abstract:</strong> Proposes configurable approximate arithmetic operators described in C++ for HLS, evaluating their impact on classification neural network model accuracy.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:4DMP91E08xMC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 15 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Accelerating machine learning at the edge with approximate computing on FPGAs</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Eduardo Salazar Villalobos, Jorge Castro Godínez, Luis Gerardo León Vega</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Investigates edge machine learning acceleration by offloading computations to FPGAs and using approximate computing to optimize hardware resource utilization." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Investiga la aceleración de machine learning en el Edge descargando cálculos a FPGAs y utilizando computación aproximada para optimizar el uso de recursos de hardware.">
-                        <strong>Abstract:</strong> Investigates edge machine learning acceleration by offloading computations to FPGAs and using approximate computing to optimize hardware resource utilization.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:Tyk-4Ss8FVUC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 16 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Evaluating CORDIC-Based and Approximate Softmax Accelerators for Deep Learning Inference on FPGAs</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Andrés Carrillo-Arroyo, Anthony Leiva-Valverde, Roger Morales-Monge, Emilio Soto-Porras, Luis G León-Vega, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/5/26</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Provides a unified analysis comparing a CORDIC-based softmax accelerator against Taylor- and LUT-based approximate designs on cloud-scale FPGA platforms." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Proporciona un análisis unificado comparando un acelerador softmax basado en CORDIC con diseños aproximados basados en series de Taylor e interpolación en plataformas FPGA en la nube.">
-                        <strong>Abstract:</strong> Provides a unified analysis comparing a CORDIC-based softmax accelerator against Taylor- and LUT-based approximate designs on cloud-scale FPGA platforms.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:-f6ydRqryjwC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 17 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Design of a library of generic accelerators of DNN-based inference algorithms for low-end FPGAs</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis Gerardo León-Vega</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2022/12/8</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes an open-source framework with libraries for the automatic generation of vectorized processing elements and generic accelerators for low-end FPGAs." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un framework de código abierto con librerías para la generación automática de elementos de procesamiento vectorizados y aceleradores genéricos para FPGAs de gama baja.">
-                        <strong>Abstract:</strong> Proposes an open-source framework with libraries for the automatic generation of vectorized processing elements and generic accelerators for low-end FPGAs.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;citation_for_view=ImRl1FQAAAAJ:8k81kl-MbHgC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 18 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Participation in Emergency and Acute Care Research Declines With Community-Level Increased Immigration Enforcement</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>E Burner, C Lam, JZ Godinez, C Olmos, MT Rincon, C Pelico, L Vega, A Garcia, R Lui, E Johnson, T Abramson</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/10/1</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Studies how community-level immigration enforcement and policy changes decrease patient participation in emergency and acute care research settings." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Estudia cómo los cambios en las políticas de inmigración y las presiones sociales a nivel comunitario disminuyen la participación en investigaciones de atención de emergencia médica.">
-                        <strong>Abstract:</strong> Studies how community-level immigration enforcement and policy changes decrease patient participation in emergency and acute care research settings.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:hFOr9nPyWt4C" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 19 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">CAMTA: A Reconfigurable Multi-Region Activation Unit for Nonlinear Function Approximation</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Carlos Soto-Porras, Jose Fonseca-Cruz, Pablo Ramirez-Morera, Erick Obregon-Fonseca, Luis G Leon-Vega, Jorge Castro-Godinez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/8/4</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Introduces CAMTA, a 16-bit reconfigurable multi-region activation unit based on Horner's method for nonlinear function approximation in FPGA and ASIC accelerators." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Introduce CAMTA, una unidad de activación multirregión reconfigurable de 16 bits basada en el método de Horner para aproximación de funciones no lineales en aceleradores FPGA y ASIC.">
-                        <strong>Abstract:</strong> Introduces CAMTA, a 16-bit reconfigurable multi-region activation unit based on Horner's method for nonlinear function approximation in FPGA and ASIC accelerators.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:IWHjjKOFINEC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 20 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Interpolation of Non-Linear Functions for LLMs using Partial Reconfiguration in FPGAs</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Roger Morales-Monge, Nazareth Jimenez-Chacon, Jose Gabriel Villalobos-Alvarado, Luis G Leon-Vega, Jorge Castro-Godinez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/8/4</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes a partial reconfiguration-based PWL interpolation framework to significantly reduce hardware costs for non-linear functions in LLM workloads." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un marco de interpolación PWL basado en reconfiguración parcial para reducir drásticamente el costo de hardware en funciones no lineales orientadas a cargas de trabajo LLM.">
-                        <strong>Abstract:</strong> Proposes a partial reconfiguration-based PWL interpolation framework to significantly reduce hardware costs for non-linear functions in LLM workloads.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:ZeXyd9-uunAC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 21 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Integrated Software and Thermal Imaging Framework to Evaluate Passive PV Cooling Systems in Intelligent Urban Environments</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis G Leon-Vega, Leonardo Cardinale-Villalobos, Christopher Vega-Sánchez, Maickol Fernandez-Obando, Luis Diego Murillo-Soto</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/6</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Presents an integrated IoT and thermal imaging framework to experimentally evaluate passive cooling systems in urban photovoltaic modules." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Presenta un marco integrado de IoT y procesamiento de imágenes térmicas para evaluar de forma experimental sistemas pasivos de enfriamiento en módulos fotovoltaicos urbanos.">
-                        <strong>Abstract:</strong> Presents an integrated IoT and thermal imaging framework to experimentally evaluate passive cooling systems in urban photovoltaic modules.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:L8Ckcad2t8MC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 22 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Exploring Approximate Logic Synthesis Opportunities for FPGA-Based Designs</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Moisés Leiva-Solano, Carlos Quirós, Nagel Mejía-Segura, Luis G León-Vega, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/5/26</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Explores approximate logic synthesis on FPGAs by adapting ASIC-oriented frameworks and evaluating post-mapping bit truncation strategies." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Explora la síntesis lógica aproximada en FPGAs adaptando herramientas orientadas a ASIC y evaluando estrategias de truncamiento de bits post-mapeo.">
-                        <strong>Abstract:</strong> Explores approximate logic synthesis on FPGAs by adapting ASIC-oriented frameworks and evaluating post-mapping bit truncation strategies.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:hC7cP41nSMkC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 23 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Design and Implementation of a Multi-Sensor DAQ System for Comparative Photovoltaic Performance Analysis</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Maickol Fernandez-Obando, Luis G. Leon-Vega, Leonardo Cardinale-Villalobos, Christopher Vega-Sanchez, Luis D. Murillo-Soto</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/4/8</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Designs and implements a robust Raspberry Pi 4-based data acquisition system for comparative performance analysis of solar panels featuring different cooling systems." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Diseña e implementa un sistema de adquisición de datos robusto basado en Raspberry Pi 4 para el análisis comparativo del rendimiento de paneles solares con distintos sistemas de enfriamiento.">
-                        <strong>Abstract:</strong> Designs and implements a robust Raspberry Pi 4-based data acquisition system for comparative performance analysis of solar panels featuring different cooling systems.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:QIV2ME_5wuYC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 24 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Machine Learning-Based Error Estimation for Efficient Approximate Logic Synthesis</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Kendall Rivera-Solano, Luis G León-Vega, Erick Carvajal Barboza, Jorge Castro-Godínez</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/2/24</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Proposes a machine learning-based approach to predict errors introduced by gate elimination, reducing costly simulations during approximate logic synthesis." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Propone un enfoque basado en aprendizaje automático para predecir errores introducidos por eliminación de compuertas lógicas, reduciendo costosas simulaciones en síntesis aproximada.">
-                        <strong>Abstract:</strong> Proposes a machine learning-based approach to predict errors introduced by gate elimination, reducing costly simulations during approximate logic synthesis.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:dhFuZR0502QC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
-                <!-- Publicacion 25 -->
-                <div class="border border-gray-200 rounded-lg p-8 hover:border-tecblue-500 hover:shadow-md transition-all flex flex-col bg-gray-50">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sustainable Computing in the AI Era: Energy Profiling and Reconfigurable High-Performance Computing</h3>
-                    <p class="text-sm text-gray-500 mb-2"><i class="fa-solid fa-users mr-2"></i>Luis Gerardo Leon Vega</p>
-                    <p class="text-sm text-gray-500 mb-4"><i class="fa-solid fa-calendar mr-2"></i>2026/1/20</p>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed flex-grow lang-element" data-en="&lt;strong&gt;Abstract:&lt;/strong&gt; Doctoral dissertation focused on sustainable computing through detailed fine-grained energy profiling in supercomputers (EfiMon) and reconfigurable FPGA-based accelerators." data-es="&lt;strong&gt;Resumen:&lt;/strong&gt; Disertación doctoral centrada en la computación sostenible mediante la medición detallada del consumo energético en supercomputadoras (EfiMon) y aceleradores FPGA reconfigurables.">
-                        <strong>Abstract:</strong> Doctoral dissertation focused on sustainable computing through detailed fine-grained energy profiling in supercomputers (EfiMon) and reconfigurable FPGA-based accelerators.
-                    </p>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=ImRl1FQAAAAJ&amp;cstart=20&amp;pagesize=80&amp;citation_for_view=ImRl1FQAAAAJ:9ZlFYXVOiuMC" target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center justify-center text-sm font-bold text-tecblue-800 hover:text-tecblue-900 bg-tecblue-100 hover:bg-tecblue-200 px-4 py-3 rounded transition">
-                        <span class="lang-element" data-en="View Publication" data-es="Ver Publicación">View Publication</span>
-                    </a>
-                </div>
-
             </div>
         </div>
     </section>
@@ -632,7 +861,7 @@
                     <p class="text-sm text-gray-600 mb-4 flex-grow lang-element" data-en="Passionate about continuous learning and exploring new topics. Curiosity drives me to take on new challenges, experiment, and put what I have learned into practice." data-es="Amante del aprendizaje constante y de explorar nuevos temas. La curiosidad me impulsa a asumir nuevos retos, experimentar y llevar lo aprendido a la práctica.">Passionate about continuous learning and exploring new topics. Curiosity drives me to take on new challenges, experiment, and put what I have learned into practice.</p>
                     <a href="https://www.linkedin.com/in/angiekarinahm" class="text-gray-400 hover:text-tecblue-700 transition mt-auto"><i class="fa-brands fa-linkedin text-2xl"></i></a>
                 </div>
-                
+
                 <div class="bg-white rounded-xl shadow-sm p-6 text-center hover:-translate-y-2 transition-transform duration-300 flex flex-col">
                     <img src="images/AbnerArroyo.jpg" alt="Abner Arroyo Quesada" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-tecblue-100">
                     <h3 class="text-lg font-bold text-gray-900">Abner Arroyo Quesada</h3>
@@ -710,7 +939,7 @@
                 <h4 class="text-lg font-bold mb-4 text-accent-400 lang-element" data-en="Socials" data-es="Redes">Socials</h4>
                 <div class="flex space-x-4">
                     <a href="https://github.com/ECASLab" target="_blank" rel="noopener noreferrer" class="text-tecblue-100 hover:text-white transition text-2xl" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    
+
                 </div>
             </div>
         </div>
@@ -732,7 +961,7 @@
             });
 
             const elements = document.querySelectorAll('.lang-element');
-            
+
             elements.forEach(el => {
                 const translation = el.getAttribute(`data-${currentLang}`);
                 if(translation) { // Verificamos que exista la traducción
@@ -757,7 +986,7 @@
 
         // DOM Content Loaded Initializer
         document.addEventListener("DOMContentLoaded", function() {
-            
+
             // 1. Aplicamos el idioma inicial ANTES de que el usuario haga clic en nada
             applyLanguage();
 
@@ -807,6 +1036,27 @@
             teamTrack.addEventListener('scroll', updateTeamButtons);
             window.addEventListener('resize', updateTeamButtons);
             updateTeamButtons();
+
+            // 5. Publicaciones: expandir / colapsar todas
+            const pubItems = document.querySelectorAll('.pub-item');
+            const pubsToggle = document.getElementById('pubs-toggle-all');
+            const pubsLabel = pubsToggle.querySelector('.lang-element');
+            const pubsIcon = pubsToggle.querySelector('i');
+
+            function updatePubsToggle() {
+                const allOpen = [...pubItems].every(item => item.open);
+                pubsLabel.dataset.en = allOpen ? 'Collapse all' : 'Expand all';
+                pubsLabel.dataset.es = allOpen ? 'Colapsar todo' : 'Expandir todo';
+                pubsLabel.innerText = pubsLabel.dataset[currentLang];
+                pubsIcon.className = `fa-solid ${allOpen ? 'fa-down-left-and-up-right-to-center' : 'fa-up-right-and-down-left-from-center'} mr-1`;
+            }
+
+            pubsToggle.addEventListener('click', () => {
+                const open = ![...pubItems].every(item => item.open);
+                pubItems.forEach(item => item.open = open);
+                updatePubsToggle();
+            });
+            pubItems.forEach(item => item.addEventListener('toggle', updatePubsToggle));
         });
     </script>
 </body>
